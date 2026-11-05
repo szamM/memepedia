@@ -1,0 +1,171 @@
+
+:root {
+  font-family: Arial, sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 20px 5%;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+  color: #6366f1;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.search {
+  flex: 1;
+  min-width: 180px;
+  max-width: 450px;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.publish-button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.publish-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.main {
+  max-width: 1200px;
+  min-height: 65vh;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.page-heading h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.page-heading p {
+  margin: 12px 0 32px;
+  color: #64748b;
+}
+
+.meme-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.meme-card {
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.meme-placeholder {
+  display: flex;
+  height: 220px;
+  align-items: center;
+  justify-content: center;
+  background: #e0e7ff;
+  font-size: 60px;
+}
+
+.meme-content {
+  padding: 20px;
+}
+
+.meme-content h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.author {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.meme-stats {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 20px;
+  color: #64748b;
+}
+
+.like-button {
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.like-button:focus-visible,
+.search:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 3px;
+}
+
+.empty-message {
+  padding: 30px 0;
+  color: #64748b;
+}
+
+.footer {
+  padding: 32px;
+  color: #64748b;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .meme-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    align-items: stretch;
+  }
+
+  .search {
+    max-width: none;
+    width: 100%;
+  }
+
+  .main {
+    padding: 24px 16px;
+  }
+
+  .meme-grid {
+    grid-template-columns: 1fr;
+  }
+}
