@@ -1,0 +1,16 @@
+# WebStorm
+.idea/
+
+# Node.js
+node_modules/
+
+# Vite build
+dist/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
