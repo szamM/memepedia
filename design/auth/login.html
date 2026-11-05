@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+    >
+    <title>Вход — Memepedia</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+<main class="page-shell">
+    <div class="auth-layout">
+
+        <aside class="intro">
+            <a class="intro-logo" href="./login.html">
+                Memepedia
+            </a>
+
+            <div class="intro-content">
+                <h2>С возвращением!</h2>
+                <p>
+                    Войди в свой аккаунт, чтобы
+                    сохранять любимые мемы,
+                    общаться и делиться публикациями.
+                </p>
+            </div>
+
+            <p class="intro-footer">
+                Memepedia — пространство мемов
+            </p>
+        </aside>
+
+        <section
+                class="panel"
+                aria-labelledby="login-title"
+        >
+            <p class="eyebrow">С возвращением</p>
+
+            <h1 id="login-title">Вход в аккаунт</h1>
+
+            <p class="subtitle">
+                Введи email и пароль, чтобы
+                продолжить.
+            </p>
+
+            <form class="auth-form">
+                <div class="field">
+                    <label for="email">
+                        Электронная почта
+                    </label>
+
+                    <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="name@example.com"
+                            autocomplete="email"
+                            required
+                    >
+                </div>
+
+                <div class="field">
+                    <label for="password">
+                        Пароль
+                    </label>
+
+                    <input
+                            id="password"
+                            name="password"
+                            type="password"
+                            placeholder="Введите пароль"
+                            autocomplete="current-password"
+                            required
+                    >
+                </div>
+
+                <button
+                        type="button"
+                        class="primary-button"
+                >
+                    Войти
+                </button>
+            </form>
+
+            <p class="switch-page">
+                Ещё нет аккаунта?
+                <a href="./register.html">
+                    Зарегистрироваться
+                </a>
+            </p>
+
+            <p class="prototype-notice">
+                Это учебный UX-прототип.
+                Авторизация и отправка данных
+                пока не реализованы.
+            </p>
+        </section>
+
+    </div>
+</main>
+</body>
+</html>
