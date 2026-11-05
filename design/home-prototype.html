@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>Memepedia — Прототип</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f8fafc;
+      color: #0f172a;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px 5%;
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: #6366f1;
+    }
+
+    .search {
+      flex: 1;
+      max-width: 450px;
+      padding: 12px 16px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 12px 18px;
+      background: #6366f1;
+      color: #ffffff;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #4f46e5;
+    }
+
+    button:focus-visible,
+    input:focus-visible {
+      outline: 2px solid #4f46e5;
+      outline-offset: 3px;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #64748b;
+      margin-bottom: 32px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .image-placeholder {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e0e7ff;
+      color: #4338ca;
+      font-size: 54px;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin: 0 0 12px;
+    }
+
+    .author {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .stats {
+      display: flex;
+      gap: 24px;
+      margin-top: 20px;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px;
+      color: #64748b;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        align-items: stretch;
+      }
+
+      .search {
+        width: 100%;
+        max-width: none;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding: 24px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Memepedia</div>
+    <input
+      class="search"
+      type="search"
+      aria-label="Поиск мемов"
+      placeholder="Поиск мемов..."
+    >
+    <button type="button">Добавить мем</button>
+  </header>
+
+  <main>
+    <h1>Популярные мемы</h1>
+    <p class="subtitle">
+      Самые интересные публикации сообщества
+    </p>
+
+    <section class="grid" aria-label="Лента мемов">
+      <article class="card">
+        <div class="image-placeholder">😺</div>
+        <div class="card-body">
+          <h2>Кот-программист</h2>
+          <p class="author">Автор: user123</p>
+          <div class="stats">
+            <span>❤️ 124</span>
+            <span>💬 18</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="image-placeholder">💻</div>
+        <div class="card-body">
+          <h2>Когда код заработал</h2>
+          <p class="author">Автор: developer</p>
+          <div class="stats">
+            <span>❤️ 256</span>
+            <span>💬 34</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="image-placeholder">😂</div>
+        <div class="card-body">
+          <h2>Понедельник утром</h2>
+          <p class="author">Автор: meme_master</p>
+          <div class="stats">
+            <span>❤️ 89</span>
+            <span>💬 12</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    Memepedia — учебный прототип интерфейса
+  </footer>
+</body>
+</html>
