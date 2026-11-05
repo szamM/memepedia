@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+    >
+    <title>Регистрация — Memepedia</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+<main class="page-shell">
+    <div class="auth-layout">
+
+        <aside class="intro">
+            <a class="intro-logo" href="./login.html">
+                Memepedia
+            </a>
+
+            <div class="intro-content">
+                <h2>Присоединяйся к Memepedia!</h2>
+                <p>
+                    Создай аккаунт, чтобы
+                    сохранять мемы, делиться
+                    публикациями и участвовать
+                    в жизни сообщества.
+                </p>
+            </div>
+
+            <p class="intro-footer">
+                Memepedia — пространство мемов
+            </p>
+        </aside>
+
+        <section
+                class="panel"
+                aria-labelledby="register-title"
+        >
+            <p class="eyebrow">Новый аккаунт</p>
+
+            <h1 id="register-title">
+                Создать аккаунт
+            </h1>
+
+            <p class="subtitle">
+                Заполни форму, чтобы
+                присоединиться к Memepedia.
+            </p>
+
+            <form class="auth-form">
+                <div class="field">
+                    <label for="username">
+                        Имя пользователя
+                    </label>
+
+                    <input
+                            id="username"
+                            name="username"
+                            type="text"
+                            placeholder="Придумайте имя"
+                            autocomplete="username"
+                            required
+                    >
+                </div>
+
+                <div class="field">
+                    <label for="email">
+                        Электронная почта
+                    </label>
+
+                    <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="name@example.com"
+                            autocomplete="email"
+                            required
+                    >
+                </div>
+
+                <div class="field">
+                    <label for="password">
+                        Пароль
+                    </label>
+
+                    <input
+                            id="password"
+                            name="password"
+                            type="password"
+                            placeholder="Минимум 8 символов"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                    >
+
+                    <p class="field-hint">
+                        Используйте не менее 8 символов.
+                    </p>
+                </div>
+
+                <div class="field">
+                    <label for="confirm-password">
+                        Подтвердите пароль
+                    </label>
+
+                    <input
+                            id="confirm-password"
+                            name="confirm-password"
+                            type="password"
+                            placeholder="Повторите пароль"
+                            autocomplete="new-password"
+                            required
+                    >
+                </div>
+
+                <button
+                        type="button"
+                        class="primary-button"
+                >
+                    Зарегистрироваться
+                </button>
+            </form>
+
+            <p class="switch-page">
+                Уже есть аккаунт?
+                <a href="./login.html">
+                    Войти
+                </a>
+            </p>
+
+            <p class="prototype-notice">
+                Это учебный UX-прототип.
+                Регистрация и проверка данных
+                пока не реализованы.
+            </p>
+        </section>
+
+    </div>
+</main>
+</body>
+</html>
