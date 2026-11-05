@@ -169,3 +169,50 @@ input {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Authentication navigation */
+
+.home-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.home-link {
+  border: 0;
+  background: transparent;
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+.home-register {
+  padding: 12px 18px;
+  background: #6366f1;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.home-register:hover {
+  background: #4f46e5;
+}
+
+.home-username {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .home-actions {
+    width: 100%;
+  }
+}
