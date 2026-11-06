@@ -224,6 +224,14 @@ export function RegisterPage() {
             return;
         }
 
+        if (username.trim().length < 3) {
+            setError(
+                'Имя пользователя должно содержать не менее 3 символов.'
+            );
+            return;
+        }
+
+
         if (!isValidEmail(email.trim())) {
             setError('Введите корректный email.');
             return;
